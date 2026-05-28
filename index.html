@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional 3D Generalist Portfolio of Vijay Das. Specializing in cinematic environments, physics simulations, geometry nodes, modeling, texturing, and rendering.">
+    <meta name="author" content="Vijay Das">
+    <title>Vijay Das | 3D Generalist & Blender Artist Portfolio</title>
+
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Custom Glowing Pointer Effect background -->
+    <div class="pointer-glow" id="pointerGlow"></div>
+    <div class="ambient-grid"></div>
+
+    <!-- Floating Glass Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-cubes-stack"></i></span>
+                <span class="logo-text">VIJAY<span class="accent">.</span>DAS</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#gallery" class="nav-link">My Works</a>
+                <a href="#topology" class="nav-link">Topology</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-nav">Hire Me</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="sub-title">About Me</span>
+                <h2 class="section-title">Vijay <span class="gradient-text">Das</span></h2>
+
+                <p class="about-bio">
+                    I'm a passionate <strong>3D Generalist</strong> focused on creating cinematic environments,
+                    simulations, and visually engaging scenes using Blender. I enjoy exploring different parts of the
+                    3D pipeline — including modeling, lighting, texturing, rendering, animation, and procedural
+                    workflows.
+                </p>
+                <p class="about-bio">
+                    I've worked on environment creation, fluid simulations, motion shots, and scene composition while
+                    continuously improving my technical and artistic skills. I have experience using
+                    <strong>geometry nodes</strong>, Blender add-ons, physics systems, and rendering workflows in
+                    both <strong>Eevee</strong> and <strong>Cycles</strong>.
+                </p>
+
+                <div class="about-tags">
+                    <span class="about-tag"><i class="fa-solid fa-mountain-sun"></i> Environments</span>
+                    <span class="about-tag"><i class="fa-solid fa-droplet"></i> Fluid Simulations</span>
+                    <span class="about-tag"><i class="fa-solid fa-film"></i> Motion Shots</span>
+                    <span class="about-tag"><i class="fa-solid fa-diagram-project"></i> Geometry Nodes</span>
+                    <span class="about-tag"><i class="fa-solid fa-cubes"></i> Physics Systems</span>
+                    <span class="about-tag"><i class="fa-solid fa-lightbulb"></i> Cycles & Eevee</span>
+                </div>
+            </div>
+
+            <div class="about-visual">
+                <div class="about-card glass-panel">
+                    <div class="about-card-header">
+                        <i class="fa-solid fa-id-card-clip about-card-icon"></i>
+                        <span>3D Generalist Profile</span>
+                    </div>
+                    <ul class="about-card-list">
+                        <li><span class="about-card-key"><i class="fa-solid fa-user"></i> Name</span><span
+                                class="about-card-val">Vijay Das</span></li>
+                        <li><span class="about-card-key"><i class="fa-solid fa-location-dot"></i> Based</span><span
+                                class="about-card-val">Kochi, Kerala, India</span></li>
+                        <li><span class="about-card-key"><i class="fa-solid fa-cube"></i> Software</span><span
+                                class="about-card-val">Blender 5.0 / 4.x</span></li>
+                        <li><span class="about-card-key"><i class="fa-solid fa-bolt"></i> Renderer</span><span
+                                class="about-card-val">Cycles GPU & Eevee</span></li>
+                        <li><span class="about-card-key"><i class="fa-solid fa-envelope"></i> Email</span><span
+                                class="about-card-val">kkvijaydas@gmail.com</span></li>
+                        <li><span class="about-card-key"><i class="fa-solid fa-heart"></i> Hobbies</span><span
+                                class="about-card-val">Rendering, Gaming</span></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary"
+                        style="margin-top:1.5rem; width:100%; justify-content:center;">
+                        <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-badge"><span class="badge-dot"></span> 3D Generalist & Cinematic Artist</div>
+            <h1 class="hero-title">Sculpting <span class="gradient-text">Cinematics</span> <br>Into 3D Reality</h1>
+            <p class="hero-subtitle">Creating high-impact environments, procedural geometry nodes, physics simulations,
+                and visually engaging scenes crafted entirely using Blender.</p>
+            <div class="hero-actions">
+                <a href="#gallery" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explore Artworks</a>
+                <a href="#topology" class="btn btn-outline"><i class="fa-solid fa-bezier-curve"></i> View Wireframes</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="viewport-card">
+                <div class="viewport-header">
+                    <span class="circle red"></span>
+                    <span class="circle yellow"></span>
+                    <span class="circle green"></span>
+                    <span class="viewport-title"><i class="fa-solid fa-camera"></i> Camera View [Active Camera]</span>
+                    <span class="viewport-engine">Cycles Render</span>
+                </div>
+                <div class="viewport-body">
+                    <img src="media/img/rigacar.png" alt="Featured Blender Artwork" class="hero-featured-img">
+                    <div class="viewport-overlay">
+                        <span class="overlay-stat"><i class="fa-solid fa-circle-nodes"></i> Verts: 1,200,000</span>
+                        <span class="overlay-stat"><i class="fa-solid fa-draw-polygon"></i> Faces: 1,230,000</span>
+                        <span class="overlay-stat"><i class="fa-solid fa-clock"></i> Render: Cycles GPU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#stats"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <span class="stat-icon"><i class="fa-solid fa-bezier-curve"></i></span>
+                <h3 class="stat-number" data-target="14208450">0</h3>
+                <p class="stat-label">Vertices Extruded</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon"><i class="fa-solid fa-images"></i></span>
+                <h3 class="stat-number" data-target="182">0</h3>
+                <p class="stat-label">Completed Renders</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon"><i class="fa-solid fa-hourglass-half"></i></span>
+                <h3 class="stat-number" data-target="2450">0</h3>
+                <p class="stat-label">Rendering Hours</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-icon"><i class="fa-solid fa-mug-hot"></i></span>
+                <h3 class="stat-number" data-target="1280">0</h3>
+                <p class="stat-label">Cups of Coffee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <span class="sub-title">Visual Vault</span>
+            <h2 class="section-title">My Works</h2>
+            <p class="section-desc">A selection of my personal renders, character builds, and complex mechanical
+                animations. Click any card to inspect the technical specs and play the high-res footage.</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+            <!-- Item 1: Car Transformation -->
+            <div class="gallery-card" data-title="Car Transformation Showcase"
+                data-desc="An intricate 3D transformation sequence showcasing advanced hard-surface modeling, precise mechanical joints, dynamic lighting, and cinematic motion design in Blender."
+                data-poly="3,850,000" data-verts="3,910,200" data-engine="Cycles Render Engine"
+                data-textures="4K PBR Textures" data-software="Blender 4.0 / Substance Painter" data-media-type="video"
+                data-src="media/video/cartranformation.mp4">
+                <div class="card-inner">
+                    <div class="card-image-wrap">
+                        <img src="media/img/cartranformation.jpg" alt="Car Transformation" class="card-img">
+                        <div class="card-overlay">
+                            <span class="card-icon"><i class="fa-solid fa-circle-play"></i></span>
+                            <div class="card-meta">
+                                <span class="card-category"><i class="fa-solid fa-clapperboard"></i> CGI
+                                    Animation</span>
+                                <h4 class="card-title">Car Transformation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Red Bull Animation -->
+            <div class="gallery-card" data-title="Red Bull Cinematic Simulation"
+                data-desc="Realistic car drifting simulation with procedural smoke" data-poly="980,000"
+                data-verts="995,000" data-engine="Cycles Render Engine" data-textures="Procedural Metals & Decals"
+                data-software="Blender 5.0 / After Effects" data-media-type="video"
+                data-src="media/video/redbullcopy.MP4">
+                <div class="card-inner">
+                    <div class="card-image-wrap">
+                        <img src="media/img/redbullcopy.png" alt="Red Bull Animation" class="card-img">
+                        <div class="card-overlay">
+                            <span class="card-icon"><i class="fa-solid fa-circle-play"></i></span>
+                            <div class="card-meta">
+                                <span class="card-category"><i class="fa-solid fa-wand-magic-sparkles"></i> Product
+                                    Showcase</span>
+                                <h4 class="card-title">Red Bull Cinematic</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Sports Car Rigging -->
+            <div class="gallery-card" data-title="Sports Car Rigging System"
+                data-desc="A fully interactive vehicle armature rig built inside Blender. Showcases responsive steering linkages, automatic wheel ground-collision, acceleration-based body roll suspension."
+                data-poly="1,200,000" data-verts="1,230,000" data-engine="Cycles Render Engine"
+                data-textures="4K Decal Mapping & Clearcoat" data-software="Blender 4.0 / Rigacar Addon"
+                data-media-type="video" data-src="media/video/rigacar.mp4">
+                <div class="card-inner">
+                    <div class="card-image-wrap">
+                        <img src="media/img/rigacar.png" alt="Sports Car Rigging" class="card-img">
+                        <div class="card-overlay">
+                            <span class="card-icon"><i class="fa-solid fa-circle-play"></i></span>
+                            <div class="card-meta">
+                                <span class="card-category"><i class="fa-solid fa-car"></i> Vehicle Rigging</span>
+                                <h4 class="card-title">Sports Car Rigging</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Rose Bloom in Skull -->
+            <div class="gallery-card" data-title="Rose Bloom in Skull (Memento Mori)"
+                data-desc="An artistic organic simulation combining dense bone sculpting with animated soft-body flower petals."
+                data-poly="2,540,000" data-verts="2,560,000" data-engine="Cycles Render Engine"
+                data-textures="Organic Clay & Procedural Petals" data-software="Blender 4.1 / ZBrush Sculpting"
+                data-media-type="video" data-src="media/video/rose-bloom-in-skull.mp4">
+                <div class="card-inner">
+                    <div class="card-image-wrap">
+                        <img src="media/img/rose-bloom-in-skull.jpg" alt="Rose Bloom in Skull" class="card-img">
+                        <div class="card-overlay">
+                            <span class="card-icon"><i class="fa-solid fa-circle-play"></i></span>
+                            <div class="card-meta">
+                                <span class="card-category"><i class="fa-solid fa-bezier-curve"></i> Organic
+                                    Sculpting</span>
+                                <h4 class="card-title">Rose Bloom in Skull</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Shark in Ocean -->
+            <div class="gallery-card" data-title="Oceanic Shark Volumetric Study"
+                data-desc="An underwater creature performance reel. Showcases fluid dynamics, dynamic sea-water caustic projections, scattering volumetric god-rays."
+                data-poly="1,850,000" data-verts="1,880,000" data-engine="Cycles Render (Volumetrics)"
+                data-textures="Hand-Painted Creature Skin PBR" data-software="Blender 4.0 / Substance Painter"
+                data-media-type="video" data-src="media/video/sharkinocean.mp4">
+                <div class="card-inner">
+                    <div class="card-image-wrap">
+                        <img src="media/img/sharkinocean.png" alt="Shark in Ocean" class="card-img">
+                        <div class="card-overlay">
+                            <span class="card-icon"><i class="fa-solid fa-circle-play"></i></span>
+                            <div class="card-meta">
+                                <span class="card-category"><i class="fa-solid fa-fish"></i> Creature Animation</span>
+                                <h4 class="card-title">Shark in Ocean</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Topology split slider Section -->
+    <section class="topology-section" id="topology">
+        <div class="topology-container">
+            <div class="topology-text">
+                <span class="sub-title">Wireframe Deck</span>
+                <h2 class="section-title">Optimal Mesh Topology</h2>
+                <p class="section-desc">Clean subdivision surface topology is critical for rigging, UV mapping, and
+                    error-free light reflections. Drag the sliding handle to analyze the underlying quad wireframe
+                    structure of the mechanical asset.</p>
+
+                <div class="topology-points">
+                    <div class="point-item">
+                        <span class="point-bullet"><i class="fa-solid fa-circle-check"></i></span>
+                        <div>
+                            <h4>Quad-Based Modeling</h4>
+                            <p>Eliminates pinching, shading artifacts, and ensures uniform subdiv subdivision.</p>
+                        </div>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-bullet"><i class="fa-solid fa-circle-check"></i></span>
+                        <div>
+                            <h4>Optimized Edge Flow</h4>
+                            <p>Loops run along deformation contours for clean animatable bending.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topology-visual">
+                <div class="slider-wrapper" id="topologySlider">
+                    <!-- Base Render Layer (Right / Background) -->
+                    <div class="slider-layer layer-render">
+                        <img src="media/img/rigacar.png" alt="Finished Render">
+                    </div>
+
+                    <!-- Wireframe Scanning Layer (Left / Foreground) -->
+                    <div class="slider-layer layer-wireframe" id="wireframeLayer">
+                        <img src="media/img/rigacar.png" alt="Wireframe Layer">
+                        <!-- Digital Grid Matrix scan overlay -->
+                        <div class="scan-matrix"></div>
+                    </div>
+
+                    <!-- Drag Handle -->
+                    <div class="slider-handle" id="sliderHandle">
+                        <div class="handle-line"></div>
+                        <div class="handle-button">
+                            <i class="fa-solid fa-left-right"></i>
+                        </div>
+                        <div class="handle-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills and Timeline Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <span class="sub-title">Toolbelt</span>
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-desc">My 3D generalist pipeline spans box modeling, realistic lighting, advanced
+                simulations, and geometry node layouts.</p>
+        </div>
+
+        <div class="skills-container">
+            <div class="skills-panel">
+                <h3 class="panel-title"><i class="fa-solid fa-gears"></i> Production Capabilities</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Cinematic Environments & Composition</span>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="92%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Physics & Fluid Simulations</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Procedural Geometry Nodes</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Lighting & Rendering (Cycles / Eevee)</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pipeline-panel">
+                <h3 class="panel-title"><i class="fa-solid fa-bezier-curve"></i> Software Pipeline</h3>
+                <div class="pipeline-grid">
+                    <div class="pipeline-card">
+                        <div class="pipeline-icon"><i class="fa-solid fa-cube"></i></div>
+                        <h4>Blender 5.0 / 4.x</h4>
+                        <p>Modeling, procedural lighting, fluid simulators, geometry nodes, and path tracing.</p>
+                    </div>
+                    <div class="pipeline-card">
+                        <div class="pipeline-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h4>Blender Physics</h4>
+                        <p>Rigid body collision, soft body petals, smoke flow, and particle simulations.</p>
+                    </div>
+                    <div class="pipeline-card">
+                        <div class="pipeline-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                        <h4>PBR Texturing Stack</h4>
+                        <p>High-fidelity UV optimization, hand-painted skin layers, and procedural metals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="sub-title">Launch Project</span>
+                <h2 class="section-title">Let's Render <br>Something Bold</h2>
+                <p class="section-desc">Looking for cinematic environment composition, fluid simulation sequences, or
+                    high-fidelity modeling and rendering for your next dynamic project? Let's discuss your scope.</p>
+
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <h4>Direct Email</h4>
+                            <p><a href="mailto:kkvijaydas@gmail.com">kkvijaydas@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <h4>Phone & WhatsApp</h4>
+                            <p><a href="tel:+918078956359">+91 8078956359</a></p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kochi, Kerala, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Hobbies / Interests Panel -->
+                <div class="interests-panel">
+                    <span class="interests-title"><i class="fa-solid fa-heart"></i> Hobbies & Interests</span>
+                    <div class="interests-tags">
+                        <span class="interest-tag"><i class="fa-solid fa-gamepad"></i> Gaming</span>
+                        <span class="interest-tag"><i class="fa-solid fa-tv"></i> Anime</span>
+                        <span class="interest-tag"><i class="fa-solid fa-cube"></i> 3D Modeling</span>
+                        <span class="interest-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Rendering</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@JUSTALITTLEBITCURIOUS" target="_blank"
+                        class="social-btn youtube-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i> Channel
+                        Link</a>
+                </div>
+
+                <!-- Custom glowing Instagram QR Code widget -->
+                <div class="instagram-qr-widget">
+                    <div class="qr-code-wrap">
+                        <img src="media/img/insta-qrcode/QR.png" alt="Instagram QR Code" class="qr-code-img">
+                        <div class="qr-scanner-line"></div>
+                    </div>
+                    <div class="qr-meta">
+                        <span class="insta-tag"><i class="fa-brands fa-instagram"></i> Instagram</span>
+                        <p class="qr-desc">Scan to see daily Blender progress & behind-the-scenes progress.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="formName" required placeholder=" ">
+                            <label for="formName">Full Name</label>
+                            <span class="focus-line"></span>
+                            <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Name is
+                                required</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="formEmail" required placeholder=" ">
+                            <label for="formEmail">Email Address</label>
+                            <span class="focus-line"></span>
+                            <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Enter a valid email
+                                address</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <select id="formService" required>
+                            <option value="" disabled selected hidden>Select Service Needed</option>
+                            <option value="hard-surface">Hard-Surface 3D Modeling</option>
+                            <option value="rigging">Vehicle Rigging (Rigacar / Custom)</option>
+                            <option value="animation">3D Animation / Turntable Reel</option>
+                            <option value="full-production">Full CGI Production</option>
+                            <option value="consulting">3D Workflow Consulting</option>
+                        </select>
+                        <span class="focus-line"></span>
+                        <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Please select a
+                            service</span>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="formMessage" required rows="5" placeholder=" "></textarea>
+                        <label for="formMessage">Project Details & Scope</label>
+                        <span class="focus-line"></span>
+                        <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Message cannot be
+                            empty</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit" id="btnSubmit">
+                        <span class="btn-text">Transmit Request <i class="fa-solid fa-paper-plane"></i></span>
+                        <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                    </button>
+
+                    <div class="form-feedback feedback-success" id="formSuccess">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h4>Transmission Successful</h4>
+                            <p>Your workspace request has been received. Let's create something stellar!</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Vijay Das. Built for high-performance 3D showcases. All models & animations
+                &copy; Vijay Das.</p>
+            <div class="footer-meta">
+                <span>Viewport: 100% Fully Responsive</span>
+                <span class="divider">|</span>
+                <span>Subsurf: Level 2 Optimized</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close modal"><i
+                class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav nav-prev" id="lightboxPrev" aria-label="Previous artwork"><i
+                class="fa-solid fa-chevron-left"></i></button>
+        <button class="lightbox-nav nav-next" id="lightboxNext" aria-label="Next artwork"><i
+                class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="lightbox-container">
+            <!-- Media Panel (Left side, covers 70% viewport on desktop) -->
+            <div class="lightbox-media-panel">
+                <!-- Image Container -->
+                <div class="media-container container-image" id="lightboxImageContainer">
+                    <img src="" alt="Active Artwork" id="lightboxImg">
+                </div>
+
+                <!-- Custom Responsive Video Player Container -->
+                <div class="media-container container-video" id="lightboxVideoContainer">
+                    <div class="custom-video-player" id="customVideoPlayer">
+                        <video src="" id="lightboxVideo" playsinline></video>
+
+                        <!-- Custom HUD Dashboard Overlay -->
+                        <div class="player-hud">
+                            <div class="hud-top">
+                                <span class="hud-filename"><i class="fa-solid fa-clapperboard"></i> <span
+                                        id="hudFilename">media_render.mp4</span></span>
+                                <span class="hud-status">Playback: Active</span>
+                            </div>
+
+                            <div class="hud-controls">
+                                <button class="hud-btn" id="hudPlay" aria-label="Play/Pause"><i
+                                        class="fa-solid fa-play"></i></button>
+
+                                <div class="hud-progress-container" id="hudProgressContainer">
+                                    <div class="hud-progress-bar" id="hudProgressBar"></div>
+                                </div>
+
+                                <div class="hud-time" id="hudTime">0:00 / 0:00</div>
+
+                                <button class="hud-btn" id="hudMute" aria-label="Toggle sound"><i
+                                        class="fa-solid fa-volume-high"></i></button>
+                                <button class="hud-btn" id="hudFullscreen" aria-label="Toggle Fullscreen"><i
+                                        class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Specs Sidebar (Right side, covers 30% viewport on desktop) -->
+            <div class="lightbox-specs-panel">
+                <div class="specs-header">
+                    <span class="specs-badge" id="specsCategory">3D MODEL</span>
+                    <h2 class="specs-title" id="specsTitle">Mechanical Sentinel Render</h2>
+                </div>
+
+                <div class="specs-body">
+                    <div class="specs-section">
+                        <h3><i class="fa-solid fa-circle-info"></i> Project Breakdown</h3>
+                        <p class="specs-description" id="specsDesc">A highly detailed sci-fi model featuring complex
+                            mechanical panels, layered plating, and optimal mesh subdivision. The piece explores
+                            hard-surface panel gaps, micro-details, and realistic PBR texturing with custom rust and
+                            dirt maps.</p>
+                    </div>
+
+                    <div class="specs-section">
+                        <h3><i class="fa-solid fa-code-fork"></i> Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-tile">
+                                <span class="tile-icon"><i class="fa-solid fa-draw-polygon"></i></span>
+                                <span class="tile-label">Polygons</span>
+                                <span class="tile-val" id="specsPoly">4,208,450</span>
+                            </div>
+                            <div class="spec-tile">
+                                <span class="tile-icon"><i class="fa-solid fa-circle-nodes"></i></span>
+                                <span class="tile-label">Vertices</span>
+                                <span class="tile-val" id="specsVerts">4,215,900</span>
+                            </div>
+                            <div class="spec-tile">
+                                <span class="tile-icon"><i class="fa-solid fa-microchip"></i></span>
+                                <span class="tile-label">Render Engine</span>
+                                <span class="tile-val" id="specsEngine">Cycles GPU</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="specs-section">
+                        <h3><i class="fa-solid fa-wrench"></i> Pipeline Stack</h3>
+                        <div class="pipeline-stack" id="specsSoftware">
+                            Blender 5.0
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-footer">
+                    <a href="#contact" class="btn btn-specs-action" id="btnSpecsContact"><i
+                            class="fa-solid fa-comments"></i> Inquire About Work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram QR Fullscreen Modal -->
+    <div class="qr-modal" id="qrModal" role="dialog" aria-modal="true">
+        <button class="qr-modal-close" id="qrModalClose" aria-label="Close QR Modal"><i
+                class="fa-solid fa-xmark"></i></button>
+        <div class="qr-modal-container">
+            <div class="qr-modal-header">
+                <span class="insta-tag"><i class="fa-brands fa-instagram"></i> Instagram Portal</span>
+                <h3>Scan to Connect</h3>
+            </div>
+            <div class="qr-modal-body">
+                <img src="media/img/insta-qrcode/QR.png" alt="Instagram QR Code Large" class="qr-large-img">
+                <div class="qr-scanner-line large"></div>
+            </div>
+            <p class="qr-modal-desc">Point your phone's camera at the screen to scan and follow on Instagram!</p>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
